@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawn/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/global.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="login">
+        <div class="login-group">
+            <form action="" class="form" id="form_login"> 
+                <div class="login-group-logo">
+                    <svg width="48" height="50" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#3751FF"></circle>
+                        <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear)"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="11" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0.7"></stop>
+                            <stop offset="1" stop-color="white"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <p>School Data Management</p>
+                <h2>Log In</h2>
+                <label for="Email" class="login-group-label">Email</label> 
+                <input type="text" name="Email" id="Email" class="login-group-input" placeholder="Email address"  required>
+                        
+                <label for="Password" class="login-group-label">Password</label>
+                <input type="password" name="Password" id="password" class="login-group-input" placeholder="Password" required>
+
+                <div class="login-group-icon" id="btnPassword">
+                    <i class="fas fa-eye-slash login-group-icon-eye"></i>
+                </div>
+                <div id="forgot" class="login-group-forgot">
+                    <a href="#forgot_pw" style="text-decoration: none;">Forgot Password?</a>
+                </div>
+                <button class="login-group-button" onclick="show()">Log In</button>
+            </form>
+        </div>       
+    </div>
+    <div id="forgot_pw">
+        <form action="" class="form" id="form-forgot"></form>
+            <div class="forgot-group">
+                <a href="#" id="closeModal" class="forgot-group-close">&times;</a>
+                <div class="forgot-group-logo">
+                    <svg width="48" height="50" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#3751FF"></circle>
+                        <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="#fff"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="11" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0.7"></stop>
+                            <stop offset="1" stop-color="white"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <p>School Data Management</p>
+                <h2>Forgot Password</h2>
+                <label for="email" class="forgot-group-label">Email</label>
+                <input type="email" name="email" class="forgot-group-input" id="email"  placeholder="Email address" onkeydown="validation()" required>
+                <span id="text"></span>
+                <input type="submit" value="Send" class="forgot-group-button" style="cursor: pointer;">         
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
