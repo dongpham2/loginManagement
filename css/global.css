@@ -25,17 +25,17 @@ body {
   border-radius: 8px;
 }
 
-.login-group {
+.login__group {
   padding: 0 32px;
 }
 
-.login-group-logo {
+.login__group--logo {
   margin: 40px auto 20px;
   width: 48px;
   height: 48px;
 }
 
-.login-group p {
+.login__group p {
   height: 24px;
   left: 32px;
   right: 32px;
@@ -51,7 +51,7 @@ body {
   opacity: 0.7;
 }
 
-.login-group h2 {
+.login__group h2 {
   height: 30px;
   left: 33px;
   right: 31px;
@@ -68,7 +68,7 @@ body {
   color: #000000;
 }
 
-.login-group-label {
+.login__group--label {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -82,7 +82,7 @@ body {
   margin-top: 15px;
 }
 
-.login-group-input {
+.login__group--input {
   text-indent: 18px;
   display: block;
   width: 100%;
@@ -96,7 +96,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.login-group-input::-webkit-input-placeholder {
+.login__group--input::-webkit-input-placeholder {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -106,7 +106,7 @@ body {
   color: #b4b4b4;
 }
 
-.login-group-input::-moz-input-placeholder {
+.login__group--input::-moz-input-placeholder {
   font-family: Mulish;
   font-style: normal;
   font-size: 14px;
@@ -115,7 +115,7 @@ body {
   color: #b4b4b4;
 }
 
-.login-group-forgot {
+.login__group--forgot {
   text-decoration: none;
   font-family: Mulish;
   font-size: 15px;
@@ -124,7 +124,7 @@ body {
   color: #808080 !important;
 }
 
-.login-group-button {
+.login__group--button {
   display: inline-block;
   margin-bottom: 40px;
   padding: 15px;
@@ -144,12 +144,12 @@ body {
   color: #fff;
 }
 
-.login-group-button:hover {
+.login__group--button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9b59b6), to(#3498db));
   background: linear-gradient(#9b59b6, #3498db);
 }
 
-.login-group-icon-eye {
+.login__group--eye {
   position: relative;
   left: 95%;
   top: 84%;
@@ -176,6 +176,8 @@ body {
   height: 0;
   z-index: 0;
   opacity: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #forgot_pw:target {
@@ -198,11 +200,11 @@ body {
   border-radius: 8px;
 }
 
-#forgot_pw .forgot-group {
+#forgot_pw .forgot__group {
   padding: 0 32px;
 }
 
-#forgot_pw .forgot-group-close {
+#forgot_pw .forgot__group--close {
   position: absolute;
   right: 0.9rem;
   top: 0.5rem;
@@ -212,13 +214,13 @@ body {
   color: inherit;
 }
 
-#forgot_pw .forgot-group-logo {
+#forgot_pw .forgot__group--logo {
   margin: 40px auto 20px;
   width: 48px;
   height: 48px;
 }
 
-#forgot_pw .forgot-group p {
+#forgot_pw .forgot__group p {
   height: 24px;
   left: 32px;
   right: 32px;
@@ -234,7 +236,7 @@ body {
   opacity: 0.7;
 }
 
-#forgot_pw .forgot-group h2 {
+#forgot_pw .forgot__group h2 {
   height: 30px;
   left: 32px;
   right: 32px;
@@ -250,7 +252,7 @@ body {
   margin-top: 30px;
 }
 
-#forgot_pw .forgot-group-label {
+#forgot_pw .forgot__group--label {
   display: inline-block;
   margin-top: 70px;
   height: 16px;
@@ -267,7 +269,7 @@ body {
   color: #9FA2B4;
 }
 
-#forgot_pw .forgot-group-input {
+#forgot_pw .forgot__group--input {
   display: inline-block;
   text-indent: 18px;
   width: 100%;
@@ -282,7 +284,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#forgot_pw .forgot-group-input::-webkit-input-placeholder {
+#forgot_pw .forgot__group--input::-webkit-input-placeholder {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -292,7 +294,7 @@ body {
   color: #b4b4b4;
 }
 
-#forgot_pw .forgot-group-input::-moz-input-placeholder {
+#forgot_pw .forgot__group--input::-moz-input-placeholder {
   font-family: Mulish;
   font-style: normal;
   font-size: 14px;
@@ -301,7 +303,7 @@ body {
   color: #b4b4b4;
 }
 
-#forgot_pw .forgot-group-button {
+#forgot_pw .forgot__group--button {
   display: inline-block;
   padding: 15px;
   font-size: 18px;
@@ -321,7 +323,7 @@ body {
   margin-bottom: 158px;
 }
 
-#forgot_pw .forgot-group-button:hover {
+#forgot_pw .forgot__group--button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9b59b6), to(#3498db));
   background: linear-gradient(#9b59b6, #3498db);
 }
